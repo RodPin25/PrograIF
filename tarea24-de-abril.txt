@@ -1,0 +1,42 @@
+public class MyProgram extends ConsoleProgram
+{
+    public String unirStrings(String pal, String pal2) {
+        return pal+" "+pal2;
+    }
+    public Integer sumNumeros(Integer num1, Integer num2){
+        return num1+num2;    
+    }
+    
+    
+    public void run()
+    {
+        String variable1="";
+        Integer variable2=1;
+        Double variable3=4.2;
+        Boolean variable4=false;
+        
+        String pal=new String("Hola");
+        String pal2=new String("Mundo");
+        
+        Integer num1=10;
+        Integer num2=20;
+        
+        System.out.println(unirStrings(pal,pal2));
+        System.out.println("El resultado de la suma es: "+sumNumeros(num1,num2).toString());
+        
+
+        System.out.println("La suma en decimales es: "+(double)sumNumeros(num1,num2));
+        
+        String cDouble=new String("4.55");
+        Double conversionStr=Double.parseDouble(cDouble);
+        System.out.println("El string en double es: "+conversionStr.toString());
+        
+        String conversionDouble=String.valueOf(conversionStr);
+        System.out.println("La conversion a string es: "+conversionDouble);
+        
+        Integer sum=sumNumeros(num1,num2);
+        Double sumC=(double)sum;
+        System.out.println("El resultado de la conversion de Double a Int es: "+Double.valueOf(sumC).intValue());
+        
+    }    
+}
