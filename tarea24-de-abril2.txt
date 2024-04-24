@@ -1,0 +1,31 @@
+public class MyProgram extends ConsoleProgram
+{
+    
+    //Variables necesarias
+    Double pi=3.14;
+    Double d2=2.8689;
+    Double d3=5.85;
+    Double d4=4.49;
+    Double d5=2.10;
+    
+    Integer i1=1945;
+    Integer i2=2010;
+    Integer i3=218;
+    Integer i4=684;
+    //Variables necesarias
+    public void run()
+    {
+        //Conversion de Double a Int
+        System.out.println("El resultado de "+pi+" a Int es: "+Double.valueOf(pi).intValue());
+        System.out.println("El resultado de "+d2+" a Int es: "+Double.valueOf(d2).intValue());
+        System.out.println("El resultado de "+d3+" a Int es: "+Double.valueOf(d3).intValue());
+        System.out.println("El resultado de "+d4+" a Int es: "+Double.valueOf(d4).intValue());
+        System.out.println("El resultado de "+d5+" a Int es: "+Double.valueOf(d5).intValue());
+        
+        //Conversion de Int a Double
+        System.out.println("El resultado de: "+i1+" a Double es: "+(double)i1);
+        System.out.println("El resultado de: "+i2+" a Double es: "+(double)i2);
+        System.out.println("El resultado de: "+i3+" a Double es: "+(double)i3);
+        System.out.println("El resultado de: "+i4+" a Double es: "+(double)i4);
+    }  
+}
