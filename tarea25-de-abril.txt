@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public Boolean devolverParImpar(Double num){
+        if(num%2==0)
+            return true;
+        else
+            return false;
+    }
+    public void run()
+    {
+        System.out.println("Hola usuario, por favor ingrese su experiencia laboral");
+        Scanner scanner= new Scanner(System.in);
+        
+        Integer num=scanner.nextInt();
+        
+        if(num>=1 && num<=5) {
+            System.out.println("Es Junior");
+        } else if(num>5 && num<=10) {
+            System.out.println("Es semi Senior");
+        } else
+            System.out.println("Es senior");
+            
+        System.out.println("Ahora ingrese un numero");
+        
+        Double numI=(double)scanner.nextInt();
+        
+        if(devolverParImpar(numI))
+            System.out.println("El numero que ingreso es par");
+        else
+            System.out.println("El numero que ingreso es impar");
+            
+        String ltr=scanner.nextLine();
+        do{
+            System.out.println("Ingrese una vocal, no una consonante");
+            ltr=scanner.nextLine();
+        }while(!ltr.equals("a") && !ltr.equals("e") && !ltr.equals("i") && !ltr.equals("o") && !ltr.equals("u"));
+        switch(ltr.toLowerCase()){
+            case "a":
+                System.out.println("Adios");
+                break;
+            case "e":
+                System.out.println("Elefante");
+                break;
+            case "i":
+                System.out.println("Iglu");
+                break;
+            case "o":
+                System.out.println("Oso");
+                break;
+            case "u":
+                System.out.println("Union");
+                break;
+        }
+        
+        System.out.println("Ahora ingrese un anio");
+        Integer year=scanner.nextInt();
+        
+        if(year%4==0){
+            if(year%2==0){
+                if(year%100==0) {
+                    System.out.println(year.toString()+" Es bisiesto");   
+                } else {
+                    System.out.println(year.toString()+" No es bisiesto");
+                } 
+            } else {
+                System.out.println(year.toString()+" No es bisiesto");    
+            }
+        } else {
+            System.out.println(year.toString()+" No es bisiesto");
+        }
+        
+    }
+}
