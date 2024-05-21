@@ -37,7 +37,7 @@ int main() {
         system("pause");
         system("cls");
         int randGenerado = genRandom();
-        cout << randGenerado << endl;
+        cout << "El numero elegido es: "<<randGenerado << endl;
         if (randGenerado % 2 == 0) {
             cout << "Se comenzara jugando con la X" << endl;
         }
@@ -63,7 +63,7 @@ int main() {
 
 int genRandom() {
     srand(time(NULL));
-    return rand() % 6;
+    return (rand() % 6)+1;
 }
 
 
