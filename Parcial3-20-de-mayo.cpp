@@ -133,9 +133,9 @@ bool verifyWin(char table[3][3]) {
 
 array<int, 2> returnCoord() {
     int x, y;
-    cout << "Seleccione la coordenada en Y para su tiro: ";
-    cin >> x;
     cout << "Seleccione la coordenada en X para su tiro: ";
+    cin >> x;
+    cout << "Seleccione la coordenada en Y para su tiro: ";
     cin >> y;
     return { x, y };
 }
